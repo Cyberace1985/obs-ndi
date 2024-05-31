@@ -24,7 +24,7 @@ RUN apt-get update && \
     sed -i 's/geteuid/getppid/' /usr/bin/vlc && \
     ln -s /config/obs-studio/ /root/.config/obs-studio && \
     wget -q -O /tmp/libndi4_4.5.1-1_amd64.deb https://github.com/obs-ndi/obs-ndi/releases/download/4.11.1/libndi5_5.5.3-1_amd64.deb && \
-    wget -q -O /tmp/obs-ndi-4.10.0-Ubuntu64.deb https://github.com/obs-ndi/obs-ndi/releases/download/4.11.1/obs-ndi-4.11.1-linux-x86_64.deb && \
+    wget -q -O /tmp/ obs-ndi-4.13.1-x86_64-linux-gnu.deb https://github.com/obs-ndi/obs-ndi/releases/download/4.13.1/obs-ndi-4.13.1-x86_64-linux-gnu.deb && \
     dpkg -i /tmp/*.deb && \
     rm -rf /tmp/*.deb
 
